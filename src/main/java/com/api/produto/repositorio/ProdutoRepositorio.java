@@ -4,7 +4,7 @@ import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 import com.api.produto.modelo.ProdutoModelo;
 
-interface ProdutoRepositorio extends CrudRepository<ProdutoModelo, Interger> {
+public interface ProdutoRepositorio extends CrudRepository<ProdutoModelo, Integer> {
     // lista de todos os produtos
     List<ProdutoModelo> findAll();
 
